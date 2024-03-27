@@ -22,11 +22,6 @@ export class CatalogComponent {
       })
     }
 
-    getImageUrl(product:IProduct){
-      if (!product) return '';
-      return 'assets/images'+ product.imageName
-    }
-
 
   addToCart(product: IProduct){
     this.cartSvc.add(product);
